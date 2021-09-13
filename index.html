@@ -29,34 +29,42 @@
   </style>
 </head>
 
-<body>
+<body class="darkMode">
   <header>
     <h1>Todo</h1>
-    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toogle dark mode">
-      <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
-        <path fill="currentColor"
-          d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
-          transform="translate(-8 -8)" />
-      </svg>
-    </button>
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toogle dark mode"></button>
   </header>
   <main>
     <form>
-      <input type="checkbox">
-      <input type="text">
+      <button class="checkbox" type="submit"></button>
+      <input type="text" placeholder="Create a new todo...">
     </form>
     <div class="todo-wrapper">
       <div class="todos-container">
         <!-- js generated list of todos -->
+        <div class="todo done">
+          <button class="checkbox checked"></button>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?</span>
+          <button class="cross">
+            <img src="images/icon-cross.svg">
+          </button>
+        </div>
+        <div class="todo">
+          <button class="checkbox"></button>
+          <span>10 minutes meditation</span>
+          <button class="cross">
+            <img src="images/icon-cross.svg">
+          </button>
+        </div>
       </div>
       <div class="interactions">
-        <span>items left</span>
+        <span>2 items left</span>
         <div class="todos-filter">
-          <button class="all-todos">All</button>
-          <button class="active-todos">Active</button>
-          <button class="completed-todos">Completed</button>
+          <button class="inter__button all-todos">All</button>
+          <button class="inter__button active-todos">Active</button>
+          <button class="inter__button completed-todos">Completed</button>
         </div>
-        <button class="clear-completed-todos">Clear Completed</button>
+        <button class="inter__button clear-completed-todos">Clear Completed</button>
       </div>
     </div>
   </main>
