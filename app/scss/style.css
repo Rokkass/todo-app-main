@@ -123,6 +123,10 @@ p {
   line-height: 1.8;
 }
 
+input {
+  font-family: var(--font-josefin);
+}
+
 header {
   width: 90%;
   max-width: 54rem;
@@ -219,6 +223,7 @@ form ::placeholder {
   border: 1px solid var(--clr-border);
   background-color: var(--clr-form);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .checkbox:hover {
@@ -303,7 +308,9 @@ button[type="submit"]:active {
   height: 2.5rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  background-color: var(--clr-form);
+  background: url("/images/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   border: none;
   cursor: pointer;
 }

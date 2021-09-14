@@ -35,9 +35,9 @@
     <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toogle dark mode"></button>
   </header>
   <main>
-    <form>
-      <button class="checkbox" type="submit"></button>
-      <input type="text" placeholder="Create a new todo...">
+    <form class="todo-form">
+      <button class="todo-submit checkbox" type="submit"></button>
+      <input type="text" class="todo-input" placeholder="Create a new todo...">
     </form>
     <div class="todo-wrapper">
       <div class="todos-container">
@@ -46,14 +46,12 @@
           <button class="checkbox checked"></button>
           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, officia?</span>
           <button class="cross">
-            <img src="images/icon-cross.svg">
           </button>
         </div>
         <div class="todo">
           <button class="checkbox"></button>
           <span>10 minutes meditation</span>
           <button class="cross">
-            <img src="images/icon-cross.svg">
           </button>
         </div>
       </div>
@@ -73,6 +71,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Michał Sroka</a>.
   </div>
+  <script src="app/js/todo.js"></script>
+  <script src="app/js/darkMode.js"></script>
 </body>
 
 </html>
