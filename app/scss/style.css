@@ -264,6 +264,7 @@ button[type="submit"]:active {
 
 .todo {
   min-height: 6rem;
+  padding: 0.5rem 0;
   border-bottom: 1px solid var(--clr-bg);
   display: -webkit-box;
   display: -ms-flexbox;
