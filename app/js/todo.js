@@ -6,6 +6,7 @@ const todosAmount = document.querySelector(".todos-count");
 const interactionsContainer = document.querySelector(".interactions");
 
 let todos = [];
+localStorage.setItem("filter", "all");
 
 todoForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -149,6 +150,7 @@ function deleteCompletedTodos() {
 }
 
 getFromLocalStorage();
+todosCount();
 
 todosContainer.addEventListener("click", function (event) {
     if (event.target.classList.contains("checkbox") && event.target.classList.contains("checked")) {
