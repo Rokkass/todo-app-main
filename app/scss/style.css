@@ -2,7 +2,7 @@
   --clr-blue: hsl(220, 98%, 61%);
   --clr-check: linear-gradient(135deg, hsl(192, 100%, 67%) 0%, hsl(280, 87%, 65%) 100%);
   --clr-header: hsl(0, 0%, 98%);
-  --clr-placeholder: hsl(236, 9%, 61%);
+  --clr-pale: hsl(236, 9%, 61%);
   --clr-bg: hsl(236, 33%, 92%);
   --clr-form: hsl(360, 100%, 100%);
   --clr-border: hsl(233, 11%, 84%);
@@ -198,28 +198,28 @@ form {
 }
 
 form ::-webkit-input-placeholder {
-  color: var(--clr-placeholder);
+  color: var(--clr-pale);
 }
 
 form :-ms-input-placeholder {
-  color: var(--clr-placeholder);
+  color: var(--clr-pale);
 }
 
 form ::-ms-input-placeholder {
-  color: var(--clr-placeholder);
+  color: var(--clr-pale);
 }
 
 form ::placeholder {
-  color: var(--clr-placeholder);
+  color: var(--clr-pale);
 }
 
 .checkbox {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   margin-left: 1.5rem;
   margin-right: 1rem;
-  -ms-flex-preferred-size: 2.5rem;
-      flex-basis: 2.5rem;
+  -ms-flex-preferred-size: 2rem;
+      flex-basis: 2rem;
   border: 1px solid var(--clr-border);
   background-color: var(--clr-form);
   border-radius: 50%;
@@ -263,8 +263,7 @@ button[type="submit"]:active {
 }
 
 .todo {
-  min-height: 5rem;
-  padding: 0.5rem 0;
+  min-height: 6rem;
   border-bottom: 1px solid var(--clr-bg);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +281,7 @@ button[type="submit"]:active {
 }
 
 .todo span {
+  margin-top: 0.35rem;
   width: 40%;
 }
 
@@ -321,9 +321,10 @@ button[type="submit"]:active {
 
 .interactions {
   width: 100%;
-  height: 5rem;
+  height: 5.5rem;
   margin: 0 1rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color: var(--clr-pale);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,14 +340,14 @@ button[type="submit"]:active {
   position: relative;
 }
 
-.interactions span {
+.interactions .todos-count {
   -webkit-box-flex: 3;
       -ms-flex-positive: 3;
           flex-grow: 3;
 }
 
 @media screen and (min-width: 500px) {
-  .interactions span {
+  .interactions .todos-count {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -356,7 +357,7 @@ button[type="submit"]:active {
 .inter__button {
   font-family: var(--font-josefin);
   background-color: transparent;
-  color: var(--clr-text);
+  color: var(--clr-pale);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -434,7 +435,7 @@ button[type="submit"]:active {
 }
 
 .done {
-  color: var(--clr-placeholder);
+  color: var(--clr-pale);
   text-decoration: line-through;
 }
 /*# sourceMappingURL=style.css.map */
