@@ -1,0 +1,42 @@
+:root {
+    --font-josefin: "Josefin Sans", sans-serif;
+
+    //###-Primary
+
+    --clr-blue: hsl(220, 98%, 61%);
+    --clr-check: linear-gradient(135deg, hsl(192, 100%, 67%) 0%, hsl(280, 87%, 65%) 100%);
+
+    //###-Light-Theme
+
+    --clr-header: hsl(235, 24%, 19%);
+    --clr-pale: hsl(236, 9%, 61%);
+    --clr-bg: hsl(236, 33%, 92%);
+    --clr-form: hsl(360, 100%, 100%);
+    --clr-border: hsl(233, 11%, 84%);
+    --clr-text: hsl(236, 18%, 31%);
+
+    --background: var(--clr-bg);
+    --toggle-image: url(/images/icon-moon.svg);
+}
+
+.darkMode {
+    //###-Dark-Theme
+
+    --clr-header: hsl(360, 100%, 100%);
+    --clr-bg: hsl(235, 21%, 11%);
+    --clr-form: hsl(235, 24%, 19%);
+    --clr-text: hsl(234, 39%, 85%);
+    --Light-Grayish-Blue: hsl(234, 39%, 85%);
+    --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+    --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+    --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+    --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+
+    --background: var(--clr-bg);
+    --toggle-image: url(/images/icon-sun.svg);
+
+    background-image: url(/images/bg-mobile-dark.jpg);
+    @media (min-width: 700px) {
+        background-image: url(/images/bg-desktop-dark.jpg);
+    }
+}

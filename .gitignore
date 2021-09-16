@@ -18,7 +18,3 @@
 *.md
 README*
 design
-app/scss/components/
-app/scss/globals/
-app/scss/style.css.map
-app/scss/style.scss

@@ -4,29 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="app/scss/style.css">
   <title>Frontend Mentor | Todo app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      position: absolute;
-      bottom: 0px;
-      left: 0;
-      right: 0;
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -41,14 +24,13 @@
     </form>
     <div class="todo-wrapper">
       <div class="todos-container">
-        <!-- js generated list of todos -->
       </div>
       <div class="interactions">
         <span class="todos-count">2 items left</span>
         <div class="todos-filter">
-          <button class="inter__button all-todos">All</button>
-          <button class="inter__button active-todos">Active</button>
-          <button class="inter__button completed-todos">Completed</button>
+          <button class="inter__button all-todos" data-type="all">All</button>
+          <button class="inter__button active-todos" data-type="active">Active</button>
+          <button class="inter__button completed-todos" data-type="completed">Completed</button>
         </div>
         <button class="inter__button clear-completed-todos">Clear Completed</button>
       </div>
